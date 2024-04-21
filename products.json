@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Gold Necklace with Diamond Pendant",
+        "category": "Necklaces",
+        "description": "Elegant gold necklace with a sparkling diamond pendant.",
+        "price": 500.00
+    },
+    {
+        "name": "Silver Bracelet with Gemstones",
+        "category": "Bracelets",
+        "description": "Beautiful silver bracelet adorned with colorful gemstones.",
+        "price": 250.00
+    },
+    {
+        "name": "Platinum Engagement Ring",
+        "category": "Rings",
+        "description": "Exquisite platinum ring featuring a brilliant-cut diamond.",
+        "price": 1500.00
+    },
+    {
+        "name": "Pearl Earrings",
+        "category": "Earrings",
+        "description": "Classic pearl earrings perfect for any occasion.",
+        "price": 120.00
+    }
+]

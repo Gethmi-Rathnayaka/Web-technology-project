@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<body>
+    <h1 id="product-name"></h1>
+    <p>Category: <span id="product-category"></span></p>
+    <p>Description: <span id="product-description"></span></p>
+    <p>Price: $<span id="product-price"></span></p>
+
+    <script>
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        async function displayProductDetails() {
+            const productName = getQueryParam('name');
+            const products = await fetchData();
+
+            const product = products.find(item => item.name === productName);
+            if (product) {
+                document.getElementById('product-name').textContent = product.name;
+                document.getElementById('product-category').textContent = product.category;
+                document.getElementById('product-description').textContent = product.description;
+                document.getElementById('product-price').textContent = product.price;
+            } else {
+                document.getElementById('product-name').textContent = 'Product Not Found';
+            }
+        }
+
+        displayProductDetails();
+    </script>
+</body>
+</html>
