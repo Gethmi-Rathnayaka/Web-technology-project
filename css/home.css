@@ -1,0 +1,146 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+  }
+  .sliderwrapper {
+    position: relative;
+    max-width: 100%;
+    height: 80vh; 
+    overflow: hidden;
+  }
+  .slider {
+    display: flex;
+    width: 500%; 
+    height: 100%;
+    transition: transform 0.5s ease; 
+  }
+  .slider img {
+    width: 20%; 
+    height: 100%;
+    object-fit: cover;
+  }
+  .text-container {
+    background-color: rgba(78, 78, 80, 0.6); 
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    text-align: center; 
+    color: white; 
+    line-height: 0.3;
+    width: 100%;
+    display: none; 
+  }
+  .text-container.active {
+    display: block; 
+  }
+  .slidernav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .slidernav a:hover {
+    opacity: 1;
+  }
+  
+  h2 {
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h3 {
+    font-size: 50px;
+  }
+  
+  p {
+    font-size: 25px;
+  }
+  
+  button {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border: 10px;
+  background-color: rgba(78, 78, 80, 0.6);
+  border: 1px solid;
+  color: white;
+  }
+  
+  .topic h1{
+    text-align: center;
+    color: #000000;
+
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+  }
+  
+  .photo {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .photo p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .photo:hover img {
+    transform: scale(1.2);
+  }
+
+  .boxes-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 50px; 
+  }
+  
+  .box {
+    padding: 12px;
+    border: 2px;
+    width: 30%; 
+    height: 130px; 
+    overflow: hidden; 
+    background-color: rgb(236, 241, 241);
+  }
+  
+  .box img {
+    width: auto; 
+    max-height: 50%; 
+    float: left;
+    margin-right: 10px; /
+  }
+  
+  .box p{
+    display: inline;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .p1{
+   color: rgb(111, 112, 112);
+  }
