@@ -120,17 +120,17 @@ html{
   }
   
   .box {
-    padding: 12px;
+    padding: 20px;
     border: 2px;
     width: 30%; 
-    height: 130px; 
+    height:200px; 
     overflow: hidden; 
     background-color: rgb(236, 241, 241);
   }
   
   .box img {
     width: auto; 
-    max-height: 50%; 
+    max-height: 94%; 
     float: left;
     margin-right: 10px; /
   }
