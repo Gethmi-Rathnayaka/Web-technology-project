@@ -99,32 +99,33 @@
   function searchProducts(query) {
     const productsRef = ref(database, 'products');
     get(productsRef).then((snapshot) => {
-      if (snapshot.exists()) {
-        const products = snapshot.val();
-        const searchResults = document.getElementById('searchResults');
-        searchResults.innerHTML = '';
-        Object.keys(products).forEach(key => {
-          const product = products[key];
-          if (product.name.toLowerCase().includes(query.toLowerCase())) {
-            const productElement = document.createElement('div');
-            productElement.innerHTML = `
-              <div>
-                <h2>${product.name}</h2>
-                <p>${product.description}</p>
-                <img src="${product.image}" alt="${product.name}">
-                <button onclick="redirectToProduct('${key}')">View Details</button>
-              </div>
-            `;
-            searchResults.appendChild(productElement);
-          }
-        });
-      } else {
-        console.log("No data available");
-      }
+        if (snapshot.exists()) {
+            const products = snapshot.val();
+            const searchResults = document.getElementById('searchResults');
+            searchResults.innerHTML = '';
+            Object.keys(products).forEach(key => {
+                const product = products[key];
+                if (product.name.toLowerCase().includes(query.toLowerCase())) {
+                    const productElement = document.createElement('div');
+                    productElement.innerHTML = `
+                        <div>
+                            <h2>${product.name}</h2>
+                            <p>${product.description}</p>
+                            <img src="${product.image}" alt="${product.name}">
+                            <a href="${product.url}">View Details</a>
+                        </div>
+                    `;
+                    searchResults.appendChild(productElement);
+                }
+            });
+        } else {
+            console.log("No data available");
+        }
     }).catch((error) => {
-      console.error("Error getting data:", error);
+        console.error("Error getting data:", error);
     });
-  }
+}
+
 
   function redirectToProduct(productId) {
     window.location.href = `product.html?id=${productId}`;
@@ -143,3 +144,4 @@
 
 </body>
 </html>
+
