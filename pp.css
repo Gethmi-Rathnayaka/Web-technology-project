@@ -23,17 +23,15 @@ body{
     width: 100%;
     height: 380px;
 }
-.container{
+.container2{
     display: flex;
     flex-direction: column;
     font-size: large;
 }
-.container div{
+.container2 div{
     padding-left: 150px;
     padding-right: 150px;
 }
 .update{
     background-color: rgb(196, 188, 188);
-    text-decoration: wavy;
-    
 }
