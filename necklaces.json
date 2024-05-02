@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "name":" Product 13",
-        "price": 70.99,
-        "image": "image/1.png"
+        "name":" Moonlit Serenade",
+        "price": 70,
+        "image": "asset/neck1.jpg"
     },
     {
         "id": 2,
-        "name":" Product 14",
-        "price": 75.99,
-        "image": "image/2.png"
+        "name":" Stardust Cascade",
+        "price": 75,
+        "image": "asset/neck2.jpg"
     },
     {
         "id": 3,
-        "name":" Product 15",
-        "price": 80.99,
-        "image": "image/3.png"
+        "name":" Eternal Knot",
+        "price": 80,
+        "image": "asset/neck5.jpg"
     },
     {
         "id": 4,
-        "name":" Product 16",
-        "price": 85.99,
-        "image": "image/4.png"
+        "name":" Crystal Lagoon",
+        "price": 85,
+        "image": "asset/neck6.jpg"
     },
     {
         "id": 5,
-        "name":" Product 17",
-        "price": 90.99,
-        "image": "image/5.png"
+        "name":" Enchanted Forest",
+        "price": 90,
+        "image": "asset/neck7.jpg"
     },
     {
         "id": 6,
-        "name":" Product 18",
-        "price": 95.99,
-        "image": "image/6.png"
+        "name":" Solar Flare",
+        "price": 95,
+        "image": "asset/neck8.jpg"
     }
 ]
