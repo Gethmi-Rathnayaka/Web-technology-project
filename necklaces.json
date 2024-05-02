@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name":" Product 13",
+        "price": 70.99,
+        "image": "image/1.png"
+    },
+    {
+        "id": 2,
+        "name":" Product 14",
+        "price": 75.99,
+        "image": "image/2.png"
+    },
+    {
+        "id": 3,
+        "name":" Product 15",
+        "price": 80.99,
+        "image": "image/3.png"
+    },
+    {
+        "id": 4,
+        "name":" Product 16",
+        "price": 85.99,
+        "image": "image/4.png"
+    },
+    {
+        "id": 5,
+        "name":" Product 17",
+        "price": 90.99,
+        "image": "image/5.png"
+    },
+    {
+        "id": 6,
+        "name":" Product 18",
+        "price": 95.99,
+        "image": "image/6.png"
+    }
+]
