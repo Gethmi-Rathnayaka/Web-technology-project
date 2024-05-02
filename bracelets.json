@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "name":" Product 19",
-        "price": 70.99,
-        "image": "image/1.png"
+        "name":" Aurora Charm",
+        "price": 70.00,
+        "image": "asset/Bracelets1.jpg"
     },
     {
         "id": 2,
-        "name":" Product 20",
-        "price": 75.99,
-        "image": "image/2.png"
+        "name":" Ocean’s Whisper",
+        "price": 75.00,
+        "image": "asset/Bracelets2.jpg"
     },
     {
         "id": 3,
-        "name":" Product 21",
-        "price": 80.99,
-        "image": "image/3.png"
+        "name":" Eclipse Bangle",
+        "price": 80.00,
+        "image": "asset/Bracelets3.jpg"
     },
     {
         "id": 4,
-        "name":" Product 22",
-        "price": 85.99,
-        "image": "image/4.png"
+        "name":" Sunbeam Links",
+        "price": 85.00,
+        "image": "asset/Bracelets4.jpg"
     },
     {
         "id": 5,
-        "name":" Product 23",
-        "price": 90.99,
-        "image": "image/5.png"
+        "name":" Verdant Vine",
+        "price": 90.00,
+        "image": "asset/Bracelets5.jpg"
     },
     {
         "id": 6,
-        "name":" Product 24",
-        "price": 95.99,
-        "image": "image/6.png"
+        "name":" Mystic Rose",
+        "price": 95.00,
+        "image": "asset/Bracelets6.jpg"
     }
 ]
