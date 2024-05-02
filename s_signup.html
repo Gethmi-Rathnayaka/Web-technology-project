@@ -3,9 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Royal Forge</title>
+  <title>Royal Forge - Sign Up</title>
   <link rel="stylesheet" href="backend,header&footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+    }
+    main {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 50px auto;
+      max-width: 400px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #AD9551;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #966e34;
+    }
+    
+    main {
+      margin-top: 150px; 
+    }
+  </style>
 </head>
 <body>
 
@@ -25,8 +74,8 @@
           <a href="#">Rings </a>
         </div>
       </div> 
-      <a href="#" class="user-auth">Sign Up</a>
-      <a href="#" class="user-auth">Login</a>
+      <a href="s_signup.html" class="user-auth">Sign Up</a>
+      <a href="s_login.html" class="user-auth">Login</a>
       <a href="#">About Us</a>
     </div>
   </nav>
@@ -36,6 +85,19 @@
 </header>
 
 <div id="searchResults"></div>
+
+<main>
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <button type="submit">Sign Up</button>
+    </form>
+  </main>
 
 <footer>
   <div class="footer-col">
@@ -123,18 +185,15 @@
     });
 }
 
-
-  function redirectToProduct(productId) {
-    window.location.href = `product.html?id=${productId}`;
-  }
-
   const searchInput = document.getElementById('searchInput');
   searchInput.addEventListener('input', () => {
     const query = searchInput.value;
     if (query.length > 0) {
       searchProducts(query);
+      document.getElementById('signupForm').style.display = 'none'; 
     } else {
       document.getElementById('searchResults').innerHTML = '';
+      document.getElementById('signupForm').style.display = 'block';
     }
   });
 </script>
