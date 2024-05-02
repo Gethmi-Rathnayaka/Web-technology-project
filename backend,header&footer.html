@@ -6,7 +6,6 @@
   <title>Royal Forge</title>
   <link rel="stylesheet" href="backend,header&footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
 </head>
 <body>
 
@@ -15,7 +14,6 @@
   <nav>
     <div class="navbar">
       <a href="#">Home</a>
-      <a href="#">About Us</a>
       <div class="dropdown">
         <button class="dropbtn">Jewellery 
           <i class="fa fa-caret-down"></i>
@@ -27,10 +25,12 @@
           <a href="#">Rings </a>
         </div>
       </div> 
+      <a href="#" class="user-auth">Sign Up</a>
+      <a href="#" class="user-auth">Login</a>
+      <a href="#">About Us</a>
     </div>
   </nav>
   <div class="container">
-    <h1>Royal Forge</h1>
     <input type="text" id="searchInput" placeholder="Search products...">
   </div>
 </header>
@@ -58,13 +58,13 @@
     <h4>Showrooms</h4>
     Kandy<br>
     No 86, Colombo street, Kandy, Sri Lanka<br>
-    94812 234402/+94 812-234403<br>
+    +94 812 234402/+94 812 234403<br>
     Negombo<br>
     No 242, Main street, Negombo<br>
     +94 312 231661/+94 312 231662<br>
     Kiribathgoda<br>
     137, Kandy Road, Kiribathgoda<br>
-    +94 112 918 818<br>
+    +94 112 918818<br>
   </div>
   <div class="copyright">
     <p>Copyright 2023 Royal Forge Jewellers. All Right Reserved.</p>
@@ -88,7 +88,7 @@
   };
 
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-  import { getDatabase, ref, get, child } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js";
+  import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js";
 
   const app = initializeApp(firebaseConfig);
   const database = getDatabase(app);
@@ -141,4 +141,3 @@
 
 </body>
 </html>
-
