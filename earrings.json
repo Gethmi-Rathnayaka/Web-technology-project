@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name":" Gilded Petals",
+        "price": 70,
+        "image": "asset/Earrings1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Halo Drops",
+        "price": 75,
+        "image": "asset/Earrings2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Sunrise Hoops",
+        "price": 80,
+        "image": "asset/Earrings3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Luminous Orbs",
+        "price": 85,
+        "image": "asset/Earrings4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Royal Crests",
+        "price": 90,
+        "image": "asset/Earrings5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Whispering Vines",
+        "price": 95,
+        "image": "asset/Earrings6.jpg"
+    }
+]

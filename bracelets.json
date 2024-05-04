@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name":" Aurora Charm",
+        "price": 70.00,
+        "image": "asset/Bracelets1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Ocean’s Whisper",
+        "price": 75.00,
+        "image": "asset/Bracelets2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Eclipse Bangle",
+        "price": 80.00,
+        "image": "asset/Bracelets3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Sunbeam Links",
+        "price": 85.00,
+        "image": "asset/Bracelets4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Verdant Vine",
+        "price": 90.00,
+        "image": "asset/Bracelets5.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Mystic Rose",
+        "price": 95.00,
+        "image": "asset/Bracelets6.jpg"
+    }
+]

@@ -1,0 +1,37 @@
+.title{
+    position: relative;
+    align-content: center;
+    font-size: 90px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: rgb(152, 152, 143);
+}
+
+body{
+    margin: 0;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 30px white;
+}
+.title img{
+    width: 100%;
+    height: 380px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+.container2 div{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.update{
+    background-color: rgb(196, 188, 188);
+}

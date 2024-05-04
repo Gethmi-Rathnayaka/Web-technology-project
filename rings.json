@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name":" Regal Radiance",
+        "price": 70.99,
+        "image": "asset/ring1.jpeg"
+    },
+    {
+        "id": 2,
+        "name":" Golden Harmony",
+        "price": 75.99,
+        "image": "asset/ring2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Lionheart Band",
+        "price": 80.99,
+        "image": "asset/ring3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Sunset Glow",
+        "price": 85.99,
+        "image": "asset/ring4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Celestial Orbit",
+        "price": 90.99,
+        "image": "asset/ring5.jpeg"
+    },
+    {
+        "id": 6,
+        "name":" Whispers of Gaia",
+        "price": 95.99,
+        "image": "asset/ring6.jpeg"
+    }
+]

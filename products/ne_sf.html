@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="s_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+    }
+    main {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 50px auto;
+      max-width: 60%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    button {
+      width: 200px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #AD9551;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #966e34;
+    }
+    
+    main {
+      margin-top: 150px; 
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="logo" width="120">
+  <nav>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Jewellery 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Necklaces</a>
+          <a href="#">Bangles</a>
+          <a href="#">Earrings</a>
+          <a href="#">Rings </a>
+        </div>
+      </div> 
+      <a href="s_signup.html" class="user-auth">Sign Up</a>
+      <a href="s_login.html" class="user-auth">Login</a>
+      <a href="#">About Us</a>
+    </div>
+  </nav>
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="Search products...">
+  </div>
+</header>
+
+<div id="searchResults"></div>
+
+<main class="product-page">
+    <div class="product">
+        <img src="product_asset/ne_sf.jpg" alt="Solar Flare" class="product-image product-image-size">
+        <div class="product-details">
+            <h1 class="product-title">Solar Flare</h1>
+            <h4 style="color:rgba(173, 141, 24, 0.945);">This elegant necklace features a beautiful gold flower pendant.<br>The flower is crafted from high-quality gold and shimmers brightly.<br> The necklace is a versatile piece that can be dressed up or down, making it perfect for any occasion.</h4>
+            <h2 class="product-price">RS.199,000.00</h2>  
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+  <div class="footer-col">
+    <h4>Contact Us</h4>
+    Head Office & Main Showroom<br>
+    Royal building, 173, Galle road, Colombo 4<br>
+    info@royalforge.com<br>
+    customercare@royalforge.com<br>
+    +94 112 583223<br>
+    +94 112 586949<br>
+    +94 112 595655<br>
+  </div>
+  <div class="footer-col">
+    <h4>Useful Links</h4>
+    <a href="#">Terms and Conditions</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="footer-col">
+    <h4>Showrooms</h4>
+    Kandy<br>
+    No 86, Colombo street, Kandy, Sri Lanka<br>
+    +94 812 234402/+94 812 234403<br>
+    Negombo<br>
+    No 242, Main street, Negombo<br>
+    +94 312 231661/+94 312 231662<br>
+    Kiribathgoda<br>
+    137, Kandy Road, Kiribathgoda<br>
+    +94 112 918818<br>
+  </div>
+  <div class="copyright">
+    <p>Copyright 2023 Royal Forge Jewellers. All Right Reserved.</p>
+    <img src="logo.jpg" alt="logo" width="120px">
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+<script type="module">
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyA1CxV4cqDuD685o3Rygkq6SF0w0w0J3mw",
+    authDomain: "web-development-l1s2.firebaseapp.com",
+    databaseURL: "https://web-development-l1s2-default-rtdb.firebaseio.com",
+    projectId: "web-development-l1s2",
+    storageBucket: "web-development-l1s2.appspot.com",
+    messagingSenderId: "154975671697",
+    appId: "1:154975671697:web:39c870b6c720cd601a3630",
+    measurementId: "G-RKGZ9SPL4Z"
+  };
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+  import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js";
+
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+
+  function searchProducts(query) {
+    const productsRef = ref(database, 'products');
+    get(productsRef).then((snapshot) => {
+        if (snapshot.exists()) {
+            const products = snapshot.val();
+            const searchResults = document.getElementById('searchResults');
+            searchResults.innerHTML = '';
+            Object.keys(products).forEach(key => {
+                const product = products[key];
+                if (product.name.toLowerCase().includes(query.toLowerCase())) {
+                    const productElement = document.createElement('div');
+                    productElement.innerHTML = `
+                        <div>
+                            <h2>${product.name}</h2>
+                            <p>${product.description}</p>
+                            <img src="${product.image}" alt="${product.name}">
+                            <a href="${product.url}">View Details</a>
+                        </div>
+                    `;
+                    searchResults.appendChild(productElement);
+                }
+            });
+            document.getElementById('productDetails').style.display = 'none';
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error("Error getting data:", error);
+    });
+}
+
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value;
+    if (query.length > 0) {
+      searchProducts(query);
+      document.getElementById('signupForm').style.display = 'none'; 
+    } else {
+      document.getElementById('searchResults').innerHTML = '';
+      document.getElementById('signupForm').style.display = 'block';
+      document.getElementById('productDetails').style.display = 'block';
+    }
+  });
+</script>
+
+</body>
+</html>
+
+    
+
+    

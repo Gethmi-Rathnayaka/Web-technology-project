@@ -1,0 +1,202 @@
+{
+  "Earrings": [
+     {
+      "id": "01",
+      "name": "Gilded Petals",
+      "description": "Gilded Petals are exquisite gold earrings shaped like blooming flowers, with each petal capturing the light to add a natural elegance to your look.",
+      "image": "https://example.com/product1.jpg",
+      "price": 10,
+      "url": "product1.html"
+    },
+    {
+      "id": "02",
+      "name": "Halo Drops",
+      "description": "Halo Drops feature a circle of gold encrusted with tiny diamonds, hanging gracefully from a gold hook. They’re heavenly in appearance and add a touch of sparkle to any ensemble.",
+      "image": "https://example.com/product2.jpg",
+      "price": 15,
+      "url": "product2.html"
+    },
+    {
+      "id": "03",
+      "name": "Sunrise Hoops",
+      "description": "Sunrise Hoops are large, gold hoop earrings with a brushed finish that mimics the soft glow of a sunrise. Bold yet sophisticated, they’re perfect for making a statement.",
+      "image": "https://example.com/product3.jpg",
+      "price": 20,
+      "url": "product3.html"
+    },
+    {
+      "id": "04",
+      "name": "Luminous Orbs",
+      "description": "Luminous Orbs are polished gold stud earrings that reflect light beautifully, akin to the radiant beams of the sun. Simple yet striking, they’re versatile for day or night wear.",
+      "image": "https://example.com/product4.jpg",
+      "price": 25,
+      "url": "product4.html"
+    },
+    {
+      "id": "05",
+      "name": "Royal Crests",
+      "description": "Royal Crests are intricately designed gold earrings featuring a family crest or monogram. They exude a sense of heritage and timeless class.",
+      "image": "https://example.com/product5.jpg",
+      "price": 30,
+      "url": "product5.html"
+    },
+    {
+      "id": "06",
+      "name": "Whispering Vines",
+      "description": "Whispering Vines are delicate gold earrings with a design that resembles the gentle twirls of a vine. Adorned with tiny green gemstone ‘leaves’, they bring a touch of nature’s tranquility to your style.",
+      "image": "https://example.com/product6.jpg",
+      "price": 35,
+      "url": "product6.html"
+    }
+  ],
+  "Rings": [
+    {
+      "id": "07",
+      "name": "Regal Radiance",
+      "description": "The Regal Radiance ring is a majestic piece featuring a prominent, round-cut diamond set in a band of intricate gold filigree. It’s designed for those who embrace elegance and sophistication.",
+      "image": "https://example.com/product7.jpg",
+      "price": 40,
+      "url": "product7.html"
+    },
+    {
+      "id": "08",
+      "name": "Golden Harmony",
+      "description": "Golden Harmony is a seamless blend of classic and contemporary, with interlocking bands of smooth and textured gold. It symbolizes unity and balance in its wearer’s life.",
+      "image": "https://example.com/product8.jpg",
+      "price": 45,
+      "url": "product8.html"
+    },
+    {
+      "id": "09",
+      "name": "Lionheart Band",
+      "description": "The Lionheart Band is a bold statement piece, with a gold band carved to resemble a lion’s mane. It’s for the brave and the fearless, a true mark of leadership and courage.",
+      "image": "https://example.com/product9.jpg",
+      "price": 50,
+      "url": "product9.html"
+    },
+    {
+      "id": "10",
+      "name": "Sunset Glow",
+      "description": "Sunset Glow captures the warm, golden hues of a setting sun. The ring’s surface is brushed to a soft finish, reflecting light gently, much like the twilight sky.",
+      "image": "https://example.com/product10.jpg",
+      "price": 55,
+      "url": "product10.html"
+    },
+    {
+      "id": "11",
+      "name": "Celestial Orbit",
+      "description": "This ring features a series of gold circles that wrap around the finger, each studded with a tiny diamond, reminiscent of celestial bodies orbiting in space.",
+      "image": "https://example.com/product11.jpg",
+      "price": 60,
+      "url": "product11.html"
+    },
+    {
+      "id": "12",
+      "name": "Whispers of Gaia",
+      "description": "Whispers of Gaia is a delicate band with a leafy pattern, embedded with small emeralds. It’s a tribute to the Earth’s natural beauty, perfect for nature lovers.",
+      "image": "https://example.com/product12.jpg",
+      "price": 65,
+      "url": "product12.html"
+    }
+  ],
+  "Necklaces": [
+    {
+      "id": "13",
+      "name": "Moonlit Serenade",
+      "description": "The Moonlit Serenade necklace features a delicate crescent moon pendant adorned with shimmering crystals. It’s a symbol of romance and the magic of moonlit nights.",
+      "image": "https://example.com/product13.jpg",
+      "price": 70,
+      "url": "product13.html"
+    },
+    {
+      "id": "14",
+      "name": "Stardust Cascade",
+      "description": "The Stardust Cascade necklace is a cascade of tiny star-shaped charms, each representing a wish or dream. Wear it to carry the universe’s secrets close to your heart.",
+      "image": "https://example.com/product14.jpg",
+      "price": 75,
+      "url": "product14.html"
+    },
+    {
+      "id": "15",
+      "name": "Eternal Knot",
+      "description": "The Eternal Knot necklace showcases an intricately woven knot design, symbolizing eternal love, friendship, and interconnectedness. A timeless piece for special occasions.",
+      "image": "https://example.com/product15.jpg",
+      "price": 80,
+      "url": "product15.html"
+    },
+    {
+      "id": "16",
+      "name": "Crystal Lagoon",
+      "description": "Dive into the Crystal Lagoon necklace, featuring aquamarine crystals reminiscent of clear tropical waters. It’s a refreshing accessory for beach lovers and daydreamers.",
+      "image": "https://example.com/product16.jpg",
+      "price": 85,
+      "url": "product16.html"
+    },
+    {
+      "id": "17",
+      "name": "Enchanted Forest",
+      "description": "The Enchanted Forest necklace combines earthy tones with leaf-shaped pendants. It’s like wearing a piece of a mystical woodland, where fairies and secrets reside. ",
+      "image": "https://example.com/product17.jpg",
+      "price": 90,
+      "url": "product17.html"
+    },
+    {
+      "id": "18",
+      "name": "Solar Flare",
+      "description": "The Solar Flare necklace boasts fiery orange and gold hues, capturing the essence of a sunburst. It’s a bold statement piece for those who radiate confidence.",
+      "image": "https://example.com/product18.jpg",
+      "price": 95,
+      "url": "product18.html"
+    }
+  ],
+  "Bracelets": [
+    {
+      "id": "19",
+      "name": "Aurora Charm",
+      "description": "A delicate bracelet featuring a spectrum of multicolored gemstones, each representing the vibrant hues of the aurora borealis. Perfect for adding a touch of whimsy to any outfit.",
+      "image": "https://example.com/product19.jpg",
+      "price": 100,
+      "url": "product19.html"
+    },
+    {
+      "id": "20",
+      "name": "Ocean’s Whisper",
+      "description": "This bracelet is crafted with aqua-blue crystals and pearls, reminiscent of the serene and gentle whispers of the ocean waves. Ideal for those who carry the sea in their hearts.",
+      "image": "https://example.com/product20.jpg",
+      "price": 105,
+      "url": "product20.html"
+    },
+    {
+      "id": "21",
+      "name": "Eclipse Bangle",
+      "description": "A bold, statement piece with a circular black onyx set in a sleek, silver band, symbolizing the mystique and beauty of a lunar eclipse. Suited for the lovers of the night sky.",
+      "image": "https://example.com/product21.jpg",
+      "price": 110,
+      "url": "product21.html"
+    },
+    {
+      "id": "22",
+      "name": "Sunbeam Links",
+      "description": "Composed of interlocking gold links with tiny diamond accents, this bracelet captures the essence of sunbeams dancing on your wrist. A bright addition to any day.",
+      "image": "https://example.com/product22.jpg",
+      "price": 115,
+      "url": "product22.html"
+    },
+    {
+      "id": "23",
+      "name": "Verdant Vine",
+      "description": "An enchanting bracelet with green peridot stones intertwined in a vine-like, gold-plated design. It’s like wearing a piece of an enchanted forest.",
+      "image": "https://example.com/product23.jpg",
+      "price": 120,
+      "url": "product23.html"
+    },
+    {
+      "id": "24",
+      "name": "Mystic Rose",
+      "description": "Featuring rose quartz beads and a delicate silver filigree, this bracelet exudes romance and mystery, akin to an ancient love story.",
+      "image": "https://example.com/product24.jpg",
+      "price": 125,
+      "url": "product24.html"
+    }
+  ]
+}
