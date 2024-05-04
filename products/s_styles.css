@@ -1,0 +1,128 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #0e0d0d;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000000;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  h1 {
+    margin-left: auto;
+    color: white;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  .search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  .search button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  main {
+    padding: 20px;
+  }
+  nav {
+    text-align: center;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #AD9551;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AD9551;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #f4f4f4;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align:center;
+  }
+  .footer-col {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px;
+  }
+  .footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .footer-col a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .footer-col a:hover {
+    color: #333;
+  }
+  .copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+  .product-image-size {
+    max-width: 500px;
+    height: 500px;
+  }
