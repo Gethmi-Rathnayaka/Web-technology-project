@@ -51,7 +51,7 @@ svg{
 }
 .listProduct .item img{
     width: 90%;
-    filter: drop-shadow(0 10px 10px #0009);
+    filter: drop-shadow(0 5px 5px #0009);
     height: 65%;
     border-radius: 20px;
 }
