@@ -12,6 +12,10 @@ body{
    margin: 50px;
 }
 
+.margin{
+    margin: 40px;
+}
+
 .centered{
     position: absolute;
     top: 50%;
@@ -47,20 +51,20 @@ p{
 
 
 #vm1 {
-    padding: 15px;
+    padding: 30px;
     margin: 50px;
     background-color: rgb(243, 239, 218);
     transition: transform 0.2s;
-    border-radius: 4%;
+    border-radius: 10px;
 }
 
 #vm2 {
-    padding: 15px;
+    padding: 30px;
     margin: 50px;
     margin-top: 1px;
     background-color: rgb(247, 246, 216);
     transition: transform 0.2s;
-    border-radius: 4%; 
+    border-radius: 10px; 
 }
 
 #vm{

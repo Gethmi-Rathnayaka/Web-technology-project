@@ -57,7 +57,8 @@
     </div>
 <br>
 <br>
-    <h1 style="color: black; font-size: 40px;">Organizational Vision & Mission</h1>
+    <div class="margin">
+      <h1 style="color: black; font-size: 40px;">Organizational Vision & Mission</h1>
     <div id="vm">
     <div id="vm1">
         <p class="p1">Vision</p>
@@ -74,6 +75,7 @@
     <h1 style="color: black; font-size: 40px;">Milestones</h1>
     <div id="photo">
     <img src="./About-img/milestones.jpg">
+    </div>
     </div>
     <br>
     <footer>
@@ -164,7 +166,7 @@
       
       
         function redirectToProduct(productId) {
-          window.location.href = product.html?id=${productId};
+          window.location.href = `product.html?id=${productId}`;
         }
       
         const searchInput = document.getElementById('searchInput');
