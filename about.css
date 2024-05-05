@@ -37,9 +37,19 @@ body{
     flex-direction: column;
 }
 .showroom div{
-    border: solid black 2px;
-    padding: 20px;
+    border: solid black 4px;
+    padding: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 20px;
     border-radius: 10px;
+    background-color: #dfded6;
+    width: 800px;
+}
+.n1,.n2,.n3{
+    transition: transform 0.3s
+}
+.n1 :hover,.n2 :hover,.n3 :hover{
+    transform: scale(1.1);
 }

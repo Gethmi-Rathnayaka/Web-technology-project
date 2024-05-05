@@ -3,36 +3,42 @@
         "id": 1,
         "name":" Moonlit Serenade",
         "price": 70,
-        "image": "asset/neck1.jpg"
+        "image": "asset/neck1.jpg",
+        "link": "/products/ne_ms.html"
     },
     {
         "id": 2,
         "name":" Stardust Cascade",
         "price": 75,
-        "image": "asset/neck2.jpg"
+        "image": "asset/neck2.jpg",
+        "link": "/products/ne_sc.html"
     },
     {
         "id": 3,
         "name":" Eternal Knot",
         "price": 80,
-        "image": "asset/neck5.jpg"
+        "image": "asset/neck5.jpg",
+        "link": "/products/ne_ek.html"
     },
     {
         "id": 4,
         "name":" Crystal Lagoon",
         "price": 85,
-        "image": "asset/neck6.jpg"
+        "image": "asset/neck6.jpg",
+        "link": "/products/ne_cl.html"
     },
     {
         "id": 5,
         "name":" Enchanted Forest",
         "price": 90,
-        "image": "asset/neck7.jpg"
+        "image": "asset/neck7.jpg",
+        "link": "/products/ne_ef.html"
     },
     {
         "id": 6,
         "name":" Solar Flare",
         "price": 95,
-        "image": "asset/neck8.jpg"
+        "image": "asset/neck8.jpg",
+        "link": "/products/ne_sf.html"
     }
 ]
