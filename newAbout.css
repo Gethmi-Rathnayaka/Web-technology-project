@@ -1,0 +1,129 @@
+.title{
+    position: relative;
+    align-content: center;
+    font-size: 90px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: rgb(152, 152, 143);
+}
+
+body{
+   margin: 50px;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 30px white;
+}
+.title img{
+    width: 100%;
+    height: 380px;
+}
+.container2{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: large;
+}
+
+.showroom{
+    display: flex;
+    flex-direction: column;
+}
+.showroom div{
+    border: solid black 2px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 19px;
+}
+
+
+#vm1 {
+    padding: 15px;
+    margin: 50px;
+    background-color: rgb(243, 239, 218);
+    transition: transform 0.2s;
+    border-radius: 4%;
+}
+
+#vm2 {
+    padding: 15px;
+    margin: 50px;
+    margin-top: 1px;
+    background-color: rgb(247, 246, 216);
+    transition: transform 0.2s;
+    border-radius: 4%; 
+}
+
+#vm{
+  margin-left: 70px;
+  margin-right: 70px;
+  
+
+}
+
+#photo{
+    margin-left: 230px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+.p1 {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+}
+
+#vm1:hover, #vm2:hover {
+    transform: scale(1.1); 
+}
+
+.description {
+    display: flex;
+    align-items: flex-start; 
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px;
+    width: 90%;
+    height: auto;
+    background-color: rgb(252, 255, 255);
+}
+
+.description .image {
+    flex: 0 0 auto; 
+}
+
+.description img {
+    width: auto;
+    max-height: 30%;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.description .text {
+    flex: 1; 
+    margin-left: 20px; 
+    text-align: justify;
+}
+
+.description h1 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #000;
+}
+
+.description p {
+    font-size: 15px;
+    margin-top: 5px; 
+}
