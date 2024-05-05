@@ -23,21 +23,21 @@
     {
         "id": 4,
         "name":" Sunbeam Links",
-        "price": 85.00,
+        "price": 653138.00,
         "image": "asset/Bracelets4.jpg",
         "link": "/products/br_sl.html"
     },
     {
         "id": 5,
         "name":" Verdant Vine",
-        "price": 90.00,
+        "price": 256062.00,
         "image": "asset/Bracelets5.jpg",
         "link": "/products/br_vv.html"
     },
     {
         "id": 6,
         "name":" Mystic Rose",
-        "price": 95.00,
+        "price": 755381.00,
         "image": "asset/Bracelets6.jpg",
         "link": "/products/br_mr.html"
     }
