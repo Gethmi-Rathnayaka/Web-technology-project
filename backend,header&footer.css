@@ -5,10 +5,9 @@ body {
   }
   header {
     background-color: #0e0d0d;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
-    position: fixed;
     top: 0;
     width: 100%;
     padding: 10px 20px;
@@ -25,6 +24,7 @@ header img{
     width: 70px;
     height: 70px;
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 h1 {
@@ -51,6 +51,8 @@ h1 {
   }
   nav {
     text-align: center;
+    width: 450px;
+    padding-left: 40px;
   }
   .navbar {
     overflow: hidden;
