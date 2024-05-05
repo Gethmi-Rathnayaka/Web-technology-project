@@ -3,6 +3,7 @@ html{
     margin: 0;
     padding: 0;
   }
+
   .container {
     height: 86%;
     display: flex;
@@ -96,32 +97,58 @@ html{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-bottom: 50px;
-  }
-  
-  .photo {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .photo img {
+}
+
+.photo1,
+.photo2 {
+    text-align: center;
+}
+
+.photo1 img
+{
     width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-out;
-  }
-  
-  .photo p {
+    max-width: 330px;
+    height: 360px;
+    transition: transform 0.2s;
+}
+
+.photo2 img {
+  width: 100%;
+    max-width: 400px;
+    height: 360px;
+    transition: transform 0.2s;
+
+}
+.photo1 p,
+.photo2 p {
+    margin-top: 10px;
+}
+
+.photo1:hover img,
+.photo2:hover img {
+    transform: scale(1.2); 
+}
+
+.sub button {
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    border: 3px;
+    background-color: rgba(160, 160, 166, 0.6);
+    border: 0.5px solid;
+    color: rgb(18, 17, 17);
+    align-items: center;
+}
+
+  .photo2 p {
     text-align: center;
     margin-top: 10px;
   }
   
-  .photo:hover img {
-    transform: scale(1.2);
-  }
-
   .boxes-container {
     display: flex;
     justify-content: space-between; 
-    margin-top: 50px; 
+    margin: 20px;
   }
   
   .box {
@@ -149,3 +176,5 @@ html{
   .p1{
    color: rgb(111, 112, 112);
   }
+
+ 
